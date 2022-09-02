@@ -9,5 +9,12 @@ namespace NutriWater.Models
 {
     public class SingleCalcualtion
     {
+        //Fields
+        private double gallons = 0;
+        private double endCalculation = 0;
+        private double floraMicro = 0;
+        private double floraBloom = 0;
+        private double floraGro = 0;
+
     }
 }
