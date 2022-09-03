@@ -22,7 +22,32 @@ namespace NutriWater.Models
             get { return gallons; }
             set { gallons = value; }
         }
+        [Range(1, double.MaxValue - 1, ErrorMessage = "Positive Numbers Only!")]
+        public double EndCalculation
+        {
+            get { return endCalculation; }
+            set { endCalculation = value; }
+        }
 
-        
+        [Range(1, double.MaxValue - 1, ErrorMessage = "Positive Numbers Only!")]
+        public double FloraMicro
+        {
+            get { return floraMicro; }
+            set { floraMicro = value; }
+        }
+
+        [Range(1, double.MaxValue - 1, ErrorMessage = "Positive Numbers Only!")]
+        public double FloraBloom
+        {
+            get { return floraBloom; }
+            set { floraBloom = value;}
+        }
+
+        [Range(1, double.MaxValue - 1, ErrorMessage = "Positive Numbers Only!")]
+        public double FloraGro
+        {
+            get { return floraGro; }
+            set { floraGro = value; }
+        }
     }
 }
