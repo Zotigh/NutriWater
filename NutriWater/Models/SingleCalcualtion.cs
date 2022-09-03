@@ -61,5 +61,10 @@ namespace NutriWater.Models
             FloraBloom = floraBloom;
             FloraGro = floraGro;
         }
+
+        private void Calc()
+        {
+
+        }
     }
 }
