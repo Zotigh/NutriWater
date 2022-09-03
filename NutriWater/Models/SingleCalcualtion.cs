@@ -16,5 +16,13 @@ namespace NutriWater.Models
         private double floraBloom = 0;
         private double floraGro = 0;
 
+        [Range(1, double.MaxValue - 1, ErrorMessage = "Positive Numbers Only!")]
+        public double Gallons
+        {
+            get { return gallons; }
+            set { gallons = value; }
+        }
+
+        
     }
 }
