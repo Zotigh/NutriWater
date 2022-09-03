@@ -49,5 +49,17 @@ namespace NutriWater.Models
             get { return floraGro; }
             set { floraGro = value; }
         }
+
+        //Base class and Overloaders class constructors
+        public SingleCalcualtion() { }
+
+        public SingleCalcualtion(double gallons, double endCalculation, double floraMicro, double floraBloom, double floraGro)
+        {
+            Gallons = gallons;
+            EndCalculation = endCalculation;
+            FloraMicro = floraMicro;
+            FloraBloom = floraBloom;
+            FloraGro = floraGro;
+        }
     }
 }
