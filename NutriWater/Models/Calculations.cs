@@ -11,6 +11,14 @@ namespace NutriWater.Models
 {
     public class Calculations
     {
+        //initillizer
         private List<SingleCalcualtion> calculations = new List<SingleCalcualtion>();
+
+        //Getter and Setter
+        public virtual List<SingleCalcualtion> Calcualtions
+        {
+            get { return calculations; }
+            set { calculations = value; }
+        }
     }
 }
