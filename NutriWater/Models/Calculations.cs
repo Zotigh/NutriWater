@@ -11,6 +11,6 @@ namespace NutriWater.Models
 {
     public class Calculations
     {
-        private List<>
+        private List<SingleCalcualtion> calculations = new List<SingleCalcualtion>();
     }
 }
