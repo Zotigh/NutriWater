@@ -9,6 +9,8 @@ namespace NutriWater.Models
 {
     public class SingleCalcualtion
     {
+        //TODO I am unsure of where to put the calc method as of yet???
+
         //Fields
         private double gallons = 0;
         private double endCalculation = 0;
