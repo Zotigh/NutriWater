@@ -11,19 +11,19 @@
             <EditForm Model="@DepSL" OnValidSubmit="@SubmitButtonPressed">
                 <DataAnnotationsValidator />
 
-                FloraGro (In Ml):
+                FloraGro (In ml):
                 <InputNumber id="SingleCalculation." @bind-Value="DepSL.LifeTime"
                              name="principle" type="text" style="width:100%;" />
                 <ValidationMessage For="@(() => DepSL.LifeTime)" />
                 <br /><br />
 
-                FloraBloom (In Ml):
+                FloraBloom (In ml):
                 <InputNumber id="SingleCalculation." @bind-Value="@DepSL.SalvageValue"
                              type="text" style="width:100%;" />
                 <ValidationMessage For="@(() => DepSL.SalvageValue)" />
                 <br /><br />
 
-                Flora Micro (In Ml):
+                Flora Micro (In ml):
                 <InputNumber id="SingleCalculation." @bind-Value="@DepSL.StartValue"
                              type="text" style="width:100%;" />
                 <ValidationMessage For="@(() => DepSL.StartValue)" />
