@@ -4,29 +4,28 @@
 
 <h1>THIS</h1>
 <!--Main Part of page-->
-<!--
 <div style="background-color:darkslateblue">
     <div style="padding:1vw;">
         <form action="~/index.html" method="get" style="color:white">
-            <EditForm Model="@DepSL" OnValidSubmit="@SubmitButtonPressed">
+            <EditForm Model="@SingCalc" OnValidSubmit="@SubmitButtonPressed">
                 <DataAnnotationsValidator />
 
                 FloraGro (In ml):
-                <InputNumber id="SingleCalculation." @bind-Value="DepSL.LifeTime"
+                <InputNumber id="SingleCalculation." @bind-Value="SingCalc.FloraGro"
                              name="principle" type="text" style="width:100%;" />
-                <ValidationMessage For="@(() => DepSL.LifeTime)" />
+                <ValidationMessage For="@(() => SingCalc.FloraGro)" />
                 <br /><br />
 
                 FloraBloom (In ml):
-                <InputNumber id="SingleCalculation." @bind-Value="@DepSL.SalvageValue"
+                <InputNumber id="SingleCalculation." @bind-Value="@SingCalc.FloraBloom"
                              type="text" style="width:100%;" />
-                <ValidationMessage For="@(() => DepSL.SalvageValue)" />
+                <ValidationMessage For="@(() => SingCalc.FloraBloom)" />
                 <br /><br />
 
-                Flora Micro (In ml):
-                <InputNumber id="SingleCalculation." @bind-Value="@DepSL.StartValue"
+                FloraMicro (In ml):
+                <InputNumber id="SingleCalculation." @bind-Value="@SingCalc.FloraMicro"
                              type="text" style="width:100%;" />
-                <ValidationMessage For="@(() => DepSL.StartValue)" />
+                <ValidationMessage For="@(() => SingCalc.FloraMicro)" />
                 <br /><br />
                 <button type="button" @onclick="SubmitButtonPressed">Submit</button>
                 <button type="button" @onclick="ClearButtonPressed">Clear</button>
@@ -34,13 +33,13 @@
         </form>
     </div>
     <div style="color:white">
-        <p style="font-weight:bold">  End Value: $@Final.EndValue</p>
+        <p style="font-weight:bold">  End Value: $@FinCalc.FinalCalc</p>
     </div>
 </div>
 <div>
     @UIMessage
 </div>
--->
+
 <!--End of Main Part of page-->
 
 @code {
