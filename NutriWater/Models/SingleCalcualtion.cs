@@ -28,7 +28,7 @@ namespace NutriWater.Models
         public double FinalCalc
         {
             get { return finalCalc; }
-            set { finalCalc = value; }
+            //set { finalCalc = value; }
         }
 
         [Range(1, double.MaxValue - 1, ErrorMessage = "Positive Numbers Only!")]
@@ -58,7 +58,6 @@ namespace NutriWater.Models
         public SingleCalcualtion(double gallons, double endCalculation, double floraMicro, double floraBloom, double floraGro)
         {
             Gallons = gallons;
-           // EndCalculation = endCalculation;
             FloraMicro = floraMicro;
             FloraBloom = floraBloom;
             FloraGro = floraGro;
@@ -68,6 +67,7 @@ namespace NutriWater.Models
         {
             //TODO use the conversion chart to output the correct data
 
+            // endCalculation = ;
         }
     }
 }
