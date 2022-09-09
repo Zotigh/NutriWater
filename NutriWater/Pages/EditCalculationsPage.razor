@@ -28,25 +28,6 @@
                              type="text" style="width:100%;" />
                 <ValidationMessage For="@(() => DepSL.StartValue)" />
                 <br /><br />
-
-                Title:
-                <InputText id="DepricationStraightLine." @bind-Value="@DepSL.Title"
-                           type="text" style="width:100%;" />
-                <ValidationMessage For="@(() => DepSL.Title)" />
-                <br /><br />
-
-                Date Entered in Inventory:
-                <InputDate id="DepricationStraightLine." @bind-Value="@DepSL.DateAddedToInventory"
-                           type="date" style="width:100%;" />
-                <ValidationMessage For="@(() => DepSL.DateAddedToInventory)" />
-                <br /><br />
-
-                Date Removed From Inventory:
-                <InputDate id="DepricationStraightLine." @bind-Value="@DepSL.DateRemovedFromInventory"
-                           type="date" style="width:100%;" />
-                <ValidationMessage For="@(() => DepSL.DateRemovedFromInventory)" />
-                <br /><br />
-
                 <button type="button" @onclick="SubmitButtonPressed">Submit</button>
                 <button type="button" @onclick="ClearButtonPressed">Clear</button>
             </EditForm>
