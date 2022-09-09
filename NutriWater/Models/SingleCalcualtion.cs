@@ -13,7 +13,7 @@ namespace NutriWater.Models
 
         //Fields
         private double gallons = 0;
-        private double endCalculation = 0;
+        private double finalCalc = 0;
         private double floraMicro = 0;
         private double floraBloom = 0;
         private double floraGro = 0;
@@ -25,10 +25,10 @@ namespace NutriWater.Models
             set { gallons = value; }
         }
         [Range(1, double.MaxValue - 1, ErrorMessage = "Positive Numbers Only!")]
-        public double EndCalculation
+        public double FinalCalc
         {
-            get { return endCalculation; }
-            set { endCalculation = value; }
+            get { return finalCalc; }
+            set { finalCalc = value; }
         }
 
         [Range(1, double.MaxValue - 1, ErrorMessage = "Positive Numbers Only!")]
@@ -58,7 +58,7 @@ namespace NutriWater.Models
         public SingleCalcualtion(double gallons, double endCalculation, double floraMicro, double floraBloom, double floraGro)
         {
             Gallons = gallons;
-            EndCalculation = endCalculation;
+           // EndCalculation = endCalculation;
             FloraMicro = floraMicro;
             FloraBloom = floraBloom;
             FloraGro = floraGro;
