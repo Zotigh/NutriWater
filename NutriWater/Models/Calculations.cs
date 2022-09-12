@@ -12,13 +12,13 @@ namespace NutriWater.Models
     public class Calculations
     {
         //initillizer
-        private List<SingleCalcualtion> calculations = new List<SingleCalcualtion>();
+        private List<SingleCalcualtion> allCalculations = new List<SingleCalcualtion>();
 
         //Getter and Setter
-        public virtual List<SingleCalcualtion> Calcualtions
+        public virtual List<SingleCalcualtion> AllCalcualtions
         {
-            get { return calculations; }
-            set { calculations = value; }
+            get { return allCalculations; }
+            set { allCalculations = value; }
         }
     }
 }
