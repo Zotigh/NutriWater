@@ -24,7 +24,11 @@
             <tr>
                 @foreach (var Calculation in CalculationsList.AllCalcualtions)
                     {
-                        
+                        <td>@Calculation.FloraBloom</td>
+                        <td>@Calculation.FloraGro</td>
+                        <td>@Calculation.FloraMicro</td>
+                        <td>@Calculation.Gallons</td>
+                        <td>@Calculation.FinalCalc</td>
                     }
             </tr>
            <!-- @foreach (var CalculatedResult in CalculatedService.CalculatedResults)
