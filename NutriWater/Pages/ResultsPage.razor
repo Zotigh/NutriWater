@@ -30,6 +30,7 @@
                         <td>@Calculation.Gallons</td>
                         <td>@Calculation.FinalCalc</td>
                         <td><button type="button" @onclick="e => EditItem(Calculation)">Edit</button></td>
+                        <td><button type="button" @onclick="e => RemoveItem(Calculation)">Remove</button></td>
                     }
             </tr>
            <!-- @foreach (var CalculatedResult in CalculatedService.CalculatedResults)
@@ -55,4 +56,5 @@
 @code {
     void EditItem(SingleCalcualtion Calcualtion)
     {}
+
 }
