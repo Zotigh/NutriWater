@@ -66,6 +66,8 @@ namespace NutriWater.Models
         private void Calc()
         {
             //TODO use the conversion chart to output the correct data
+            //Need to find values may need to make more instances to handle the final calculations. 
+            //This may need me to return multiple results.
 
             // endCalculation = ;
         }
