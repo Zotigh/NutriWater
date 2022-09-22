@@ -23,7 +23,7 @@ namespace NutriWater.Models
         public double Gallons
         {
             get { return gallons; }
-            set { gallons = value; }
+            set { gallons = value; Calc(); }
         }
         [Range(1, double.MaxValue - 1, ErrorMessage = "Positive Numbers Only!")]
         public double FinalCalc
