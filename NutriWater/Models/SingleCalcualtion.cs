@@ -53,6 +53,14 @@ namespace NutriWater.Models
             set { floraGro = value; }
         }
 
+        [Required]
+        [Range(1, int.MaxValue - 1, ErrorMessage = "Positive Numbers Only!")]
+        public int Position
+        {
+            get { return position; }
+            set { position = value; }
+        }
+
         //Base class and Overloaders class constructors
         public SingleCalcualtion() { }
 
