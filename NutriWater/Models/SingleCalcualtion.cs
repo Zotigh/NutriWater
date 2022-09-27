@@ -12,6 +12,8 @@ namespace NutriWater.Models
         //TODO I am unsure of where to put the calc method as of yet???
 
         //Fields
+        private DateTime dateAddedToInventory;
+        private DateTime dateRemovedFromInventory;
         private double gallons = 0;
         private double finalCalc = 0;
         private double floraMicro = 0;
