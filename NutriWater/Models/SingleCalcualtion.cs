@@ -20,7 +20,20 @@ namespace NutriWater.Models
         private double floraBloom = 0;
         private double floraGro = 0;
         private int final = 0;
-        private int position = 0; 
+        private int position = 0;
+
+        [Required(ErrorMessage = "Please be sure to include a Date Added!")]
+        public DateTime DateAddedToInventory
+        {
+            get { return dateAddedToInventory; }
+            set { dateAddedToInventory = value; Calc(); }
+        }
+        [Required(ErrorMessage = "Please be sure to include a Date Removed!")]
+        public DateTime DateRemovedFromInventory
+        {
+            get { return dateRemovedFromInventory; }
+            set { dateRemovedFromInventory = value; }
+        }
 
         [Range(1, double.MaxValue - 1, ErrorMessage = "Positive Numbers Only!")]
         public double Gallons
