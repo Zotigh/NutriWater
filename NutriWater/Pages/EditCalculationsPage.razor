@@ -68,7 +68,10 @@
         }
     }
 
-    //TODO make the override async method
+    protected override async Task OnInitializedAsync()
+    {
+        initalize();
+    }
 
     void SubmitButtonPressed()
     {
