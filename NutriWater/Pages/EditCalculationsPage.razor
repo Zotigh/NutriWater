@@ -10,9 +10,9 @@
         <form action="~/index.html" method="get" style="color:white">
             <EditForm Model="@SingCalc" OnValidSubmit="@SubmitButtonPressed">
                 <DataAnnotationsValidator />
-
+                
                 Title:
-                <InputText id="SingleCalculation." @bind-Value="@SingleCalc.Title"
+                <InputText id="SingleCalculation." @bind-Value="@SingCalc.Title"
                            type="text" style="width:100%;" />
                 <ValidationMessage For="@(() => SingCalc.Title)" />
 
