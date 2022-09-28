@@ -21,6 +21,7 @@ namespace NutriWater.Models
         private double floraGro = 0;
         private int final = 0;
         private int position = 0;
+        private string title = "";
 
         [Required(ErrorMessage = "Please be sure to include a Date Added!")]
         public DateTime DateAddedToInventory
@@ -67,7 +68,12 @@ namespace NutriWater.Models
             get { return floraGro; }
             set { floraGro = value; }
         }
-
+        [Required(ErrorMessage = "Please be sure to include a title!")]
+        public string Title
+        {
+            get { return title; }
+            set { title = value; }
+        }
         [Required]
         [Range(1, int.MaxValue - 1, ErrorMessage = "Positive Numbers Only!")]
         public int Position
@@ -79,11 +85,12 @@ namespace NutriWater.Models
         //Base class and Overloaders class constructors
         public SingleCalcualtion() { }
 
-        public SingleCalcualtion(double gallons, double endCalculation, double floraMicro, double floraBloom, double floraGro, DateTime dateAddedToInventory, DateTime dateRemovedFromInventory)
+        public SingleCalcualtion(double gallons, double endCalculation, double floraMicro, double floraBloom, double floraGro, string title, DateTime dateAddedToInventory, DateTime dateRemovedFromInventory)
         {
             Gallons = gallons;
             FloraMicro = floraMicro;
             FloraBloom = floraBloom;
+            Title = title;
             FloraGro = floraGro;
             DateAddedToInventory = dateAddedToInventory;
             DateRemovedFromInventory = dateRemovedFromInventory;
