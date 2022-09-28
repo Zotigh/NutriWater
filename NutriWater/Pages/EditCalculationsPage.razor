@@ -11,6 +11,11 @@
             <EditForm Model="@SingCalc" OnValidSubmit="@SubmitButtonPressed">
                 <DataAnnotationsValidator />
 
+                Title:
+                <InputText id="SingleCalculation." @bind-Value="@SingleCalc.Title"
+                           type="text" style="width:100%;" />
+                <ValidationMessage For="@(() => SingCalc.Title)" />
+
                 FloraGro (In ml):
                 <InputNumber id="SingleCalculation." @bind-Value="SingCalc.FloraGro"
                              name="principle" type="text" style="width:100%;" />
@@ -36,13 +41,13 @@
                 <br /><br />
 
                 Date Entered in Inventory:
-                <InputDate id="DepricationStraightLine." @bind-Value="@SingCalc.DateAddedToInventory"
+                <InputDate id="." @bind-Value="@SingCalc.DateAddedToInventory"
                            type="date" style="width:100%;" />
                 <ValidationMessage For="@(() => SingCalc.DateAddedToInventory)" />
                 <br /><br />
 
                 Date Removed From Inventory:
-                <InputDate id="DepricationStraightLine." @bind-Value="@SingCalc.DateRemovedFromInventory"
+                <InputDate id="." @bind-Value="@SingCalc.DateRemovedFromInventory"
                            type="date" style="width:100%;" />
                 <ValidationMessage For="@(() => SingCalc.DateRemovedFromInventory)" />
                 <br /><br />
