@@ -96,9 +96,11 @@
         {
             if (SingCalc.Title != "" && SingCalc.Gallons > 0 && SingCalc.FloraBloom > 0 && SingCalc.FloraGro > 0 && SingCalc.FloraMicro > 0 && SingCalc.DateAddedToInventory > DateTime.MinValue && SingCalc.DateRemovedFromInventory > DateTime.MinValue)
             {
+
+                //TODO this may need to change positions and be resolved in general
                 i = SingCalc.Position;
                 SingCalc.Position = -1;
-
+                CalculatedService.AllCalcualtions.RemoveAt(SingCalc.Position);
                 /*FinCalc.Title = SingCalc.Title;
                 FinCalc.Gallons = SingCalc.Gallons;
                 FinCalc.FloraBloom = SingCalc.FloraBloom;
