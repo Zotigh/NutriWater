@@ -96,6 +96,8 @@
         {
             if (SingCalc.Title != "" && SingCalc.Gallons > 0 && SingCalc.FloraBloom > 0 && SingCalc.FloraGro > 0 && SingCalc.FloraMicro > 0 && SingCalc.DateAddedToInventory > DateTime.MinValue && SingCalc.DateRemovedFromInventory > DateTime.MinValue)
             {
+                i = SingCalc.Position;
+                SingCalc.Position = -1;
 
                 /*FinCalc.Title = SingCalc.Title;
                 FinCalc.Gallons = SingCalc.Gallons;
