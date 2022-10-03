@@ -71,6 +71,7 @@
         //Initilizer
         SingleCalcualtion SingCalc = new SingleCalcualtion();
         SingleCalcualtion FinCalc = new SingleCalcualtion();
+        int i;
 
         //UI Message
         string UIMessage = "";
@@ -95,13 +96,14 @@
         {
             if (SingCalc.Title != "" && SingCalc.Gallons > 0 && SingCalc.FloraBloom > 0 && SingCalc.FloraGro > 0 && SingCalc.FloraMicro > 0 && SingCalc.DateAddedToInventory > DateTime.MinValue && SingCalc.DateRemovedFromInventory > DateTime.MinValue)
             {
-                FinCalc.Title = SingCalc.Title;
+
+                /*FinCalc.Title = SingCalc.Title;
                 FinCalc.Gallons = SingCalc.Gallons;
                 FinCalc.FloraBloom = SingCalc.FloraBloom;
                 FinCalc.FloraGro = SingCalc.FloraGro;
                 FinCalc.FloraMicro = SingCalc.FloraMicro;
                 FinCalc.DateAddedToInventory = SingCalc.DateAddedToInventory;
-                FinCalc.DateRemovedFromInventory = SingCalc.DateRemovedFromInventory;
+                FinCalc.DateRemovedFromInventory = SingCalc.DateRemovedFromInventory;*/
             }
     }
 
