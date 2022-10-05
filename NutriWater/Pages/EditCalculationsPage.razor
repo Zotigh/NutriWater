@@ -101,6 +101,7 @@
                 i = SingCalc.Position;
                 CalculatedService.AllCalcualtions.RemoveAt(SingCalc.Position);
                 SingCalc.Position = -1;
+                CalculatedService.AllCalcualtions.Insert(i, SingCalc);
                 /*FinCalc.Title = SingCalc.Title;
                 FinCalc.Gallons = SingCalc.Gallons;
                 FinCalc.FloraBloom = SingCalc.FloraBloom;
